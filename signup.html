@@ -107,6 +107,28 @@ nav ul li a:hover {
 
 		
 	</form>
+	<div id="thank-you"></div>
+	<script>
+		// Get the form and thank-you elements
+		const form = document.querySelector('form');
+		const thankYouMsg = document.querySelector('#thank-you');
+	  
+		// Add an event listener to the form
+		form.addEventListener('submit', function(e) {
+		  // Prevent the form from submitting immediately
+		  e.preventDefault();
+	  
+		  // Display the thank-you message
+		  thankYouMsg.textContent = 'Thank you for signing up!';
+	  
+		  // Wait for 3 seconds before submitting the form
+		  setTimeout(function() {
+			form.submit();
+		  }, 3000);
+		});
+	  </script>
+	  
+	  
 	
 </body>
 </html>
