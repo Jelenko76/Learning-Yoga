@@ -60,9 +60,11 @@ Not pleased with the layout 100%. Might go over it and give it some more love.
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
-In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+- In the GitHub repository, navigate to the Settings tab
+- From the source section drop-down menu, 
+- select the Master Branch
+- Once the master branch has been selected, 
+- the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 
 ## Credits
