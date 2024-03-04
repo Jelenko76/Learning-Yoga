@@ -1,46 +1,44 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
+/* Resetting default browser styles */
 * {
     margin: 0;
     padding: 0;
     border: none;
 }
 
+/* Body styles */
 body {
-    font-family: Lato, sans-serif;
+    font-family: Lato, sans-serif; /* Default font */
     font-size: 18px;
-    color: #0a0a0a;
+    color: #0a0a0a; /* Text color */
 }
 
-/* headings and logo */
-
-h1,h2 {
-    font-family: Oswald, sans-serif;
+/* Headings styles */
+h1, h2 {
+    font-family: Oswald, sans-serif; /* Heading font */
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #0e0d0d;
-    margin-bottom: 40px;
-    
-    
+    color: #0e0d0d; /* Heading text color */
+    margin-bottom: 40px; /* Spacing below headings */
 }
 
+/* Logo styles */
 #logo {
-    
-    font-size: 24px; 
-    color: #333; 
-    text-align: center; 
-    margin-top: 20px; 
-    margin-bottom: 20px; 
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px; /* Spacing above logo */
+    margin-bottom: 20px; /* Spacing below logo */
 }
 
-
-/* navigation links */
-
+/* Navigation styles */
 #menu {
     font-size: 100%;
     letter-spacing: 1px;
-    height: 40px; /* adjust height */
-    margin-top: 30px; /* add margin */
+    height: 40px;
+    margin-top: 30px; /* Spacing above navigation */
 }
 
 #menu, #logo {
@@ -48,9 +46,9 @@ h1,h2 {
 }
 
 #menu li {
-    float: right;
+    float: right; /* Aligning menu items to the right */
     list-style-type: none;
-    margin-right: 10px;
+    margin-right: 10px; /* Spacing between menu items */
 }
 
 #menu a {
@@ -59,26 +57,27 @@ h1,h2 {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a; /* Highlight on hover */
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a; /* Active menu item highlight */
 }
 
-/* hero image */
-
+/* Hero image styles */
 #hero-image {
     height: 600px;
     width: 100%;
     background: url('../images/hero-image.jpeg') no-repeat center center;
-    margin-top: 60px;
+    margin-top: 60px; /* Spacing above hero image */
 }
 
+/* Footer styles */
 footer {
     height: 100px;
 }
 
+/* Social networks styles */
 .social-networks {
     text-align: center;
 }
@@ -91,14 +90,14 @@ footer {
     font-size: 150%;
     margin: 1%;
     padding: 1%;
-    
 }
 
+/* Gallery styles */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .gallery img {
@@ -106,20 +105,22 @@ footer {
     margin: 10px;
     object-fit: cover;
 }
-        
+
 #menu li a:hover {
-    background-color: #f2f2f2;
+    background-color: #f2f2f2; /* Background color on hover */
 }
 
-/* about us section styles */
+/* About us section styles */
 #about {
     padding: 30px;
     background-color: #f5f5f5;
 }
+
 #about h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 #about p {
     font-size: 18px;
     line-height: 1.6;
@@ -127,53 +128,61 @@ footer {
     margin-bottom: 30px;
 }
 
-		body {
-			font-size: 18px;
-		}
-		form {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 30px;
-			padding: 20px;
-			background-color: #f5f5f5;
-			border-radius: 10px;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-		}
-		label,
-		input[type="email"],
-		input[type="text"],
-		select {
-			color: #333;
-		}
-		label {
-			display: block;
-			margin-bottom: 10px;
-			font-weight: bold;
-		}
-		input[type="submit"] {
-			background-color: #4CAF50;
-			color: rgb(31, 27, 27);
-			padding: 10px 15px;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-			margin-top: 10px;
-			width: 150px;
-			font-size: 16px;
-		}
-		input[type="email"],
-		input[type="text"],
-		select {
-			padding: 8px;
-		}
-		#thank-you {
-			margin-top: 20px;
-			font-weight: bold;
-			color: #4CAF50;
-		}
+/* Form styles */
+body {
+    font-size: 18px;
+}
 
-		nav {
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+label,
+input[type="email"],
+input[type="text"],
+select {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgb(31, 27, 27);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 150px;
+    font-size: 16px;
+}
+
+input[type="email"],
+input[type="text"],
+select {
+    padding: 8px;
+}
+
+#thank-you {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Navigation styles */
+nav {
     position: absolute;
     top: 0;
     right: 0;
@@ -200,7 +209,5 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #4CAF50;
+    color: #4CAF50; /* Highlight on hover */
 }
-
-	
