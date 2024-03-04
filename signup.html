@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<title>Yoga Studio Sign-Up Form</title>
-	
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Title of the webpage -->
+    <title>Yoga Studio Sign-Up Form</title>
 </head>
 <body>
-	<header>
+    <!-- Header section -->
+    <header>
+        <!-- Logo with a link to the home page -->
         <a href="index.html">
             <h1 id="logo">Learning Yoga</h1>
         </a>
+        <!-- Navigation menu -->
         <nav>
             <ul id="menu">
                 <li>
@@ -24,61 +28,68 @@
             </ul>
         </nav>
     </header>
-	
-	<form>
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required>
+    
+    <!-- Sign-up form -->
+    <form>
+        <!-- Name input field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required>
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-		<label for="class">Class:</label>
-		<select id="class" name="class" required>
-			<option value="">-- Select a class --</option>
-			<option value="Hatha Yoga">Hatha Yoga</option>
-			<option value="Meditation">Meditation</option>
-		</select>
+        <!-- Class selection dropdown -->
+        <label for="class">Class:</label>
+        <select id="class" name="class" required>
+            <option value="">-- Select a class --</option>
+            <option value="Hatha Yoga">Hatha Yoga</option>
+            <option value="Meditation">Meditation</option>
+        </select>
 
-		<input type="submit" value="Sign Up">
+        <!-- Submit button -->
+        <input type="submit" value="Sign Up">
+    </form>
 
-		
-	</form>
-	<div id="thank-you"></div>
-	<script>
-		// Get the form and thank-you elements
-		const form = document.querySelector('form');
-		const thankYouMsg = document.querySelector('#thank-you');
-	  
-		// Add an event listener to the form
-		form.addEventListener('submit', function(e) {
-		  // Prevent the form from submitting immediately
-		  e.preventDefault();
-	  
-		  // Display the thank-you message
-		  thankYouMsg.textContent = 'Thank you for signing up!';
-	  
-		  // Wait for 3 seconds before submitting the form
-		  setTimeout(function() {
-			form.submit();
-		  }, 3000);
-		});
-	  </script>
-	   <ul class="social-networks">
-		<li>
-			<a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
-		</li>
-		<li>
-			<a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
-		</li>
-		<li>
-			<a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
-		</li>
-	</ul>
-  
-</footer>
-<script src="https://kit.fontawesome.com/0dc4256c19.js" crossorigin="anonymous"></script>
-	  
-	  
-	
+    <!-- Thank-you message section -->
+    <div id="thank-you"></div>
+
+    <!-- JavaScript section -->
+    <script>
+        // Get the form and thank-you elements
+        const form = document.querySelector('form');
+        const thankYouMsg = document.querySelector('#thank-you');
+      
+        // Add an event listener to the form
+        form.addEventListener('submit', function(e) {
+          // Prevent the form from submitting immediately
+          e.preventDefault();
+      
+          // Display the thank-you message
+          thankYouMsg.textContent = 'Thank you for signing up!';
+      
+          // Wait for 3 seconds before submitting the form
+          setTimeout(function() {
+            form.submit();
+          }, 3000);
+        });
+    </script>
+
+    <!-- Social networks section -->
+    <footer>
+        <ul class="social-networks">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Font Awesome JavaScript -->
+    <script src="https://kit.fontawesome.com/0dc4256c19.js" crossorigin="anonymous"></script>
 </body>
 </html>
